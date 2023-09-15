@@ -131,7 +131,6 @@ while (xi(n)<L)
         [u(j,n+1),v(j,n+1),p(j,n+1),T(j,n+1),M(j,n+1)]=decodevars(F(j,:),rho(j,n+1),gam,R);
     end
     
-
     % Boundary conditions
     [rho(1,n+1),u(1,n+1),v(1,n+1),p(1,n+1),T(1,n+1),M(1,n+1),F(1,:),G(1,:)] = bcs(u(1,n+1),v(1,n+1),p(1,n+1),T(1,n+1),M(1,n+1),gam,R,wang);
     [rho(Ny,n+1),u(Ny,n+1),v(Ny,n+1),p(Ny,n+1),T(Ny,n+1),M(Ny,n+1),F(Ny,:),G(Ny,:)] = bcs(u(Ny,n+1),v(Ny,n+1),p(Ny,n+1),T(Ny,n+1),M(Ny,n+1),gam,R,0);
