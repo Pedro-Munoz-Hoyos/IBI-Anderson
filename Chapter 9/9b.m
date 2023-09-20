@@ -63,7 +63,6 @@ for i=1:Nx
         vij(i,j)=0.5*(v(i,j+1)+v(i,j));
     end
 end
-
 contourf(x,y,uij,80,'LineColor','none');
 set(gcf,'color','white');
 xlabel("x[m]");
